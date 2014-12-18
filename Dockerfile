@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
   procps \
   vim \
   wget
-RUN ["/bin/bash", "-c", ". /etc/bash_completion"]
+CMD ["/bin/bash", "-c", ". /etc/bash_completion"]
