@@ -5,4 +5,5 @@ RUN apt-get install -y \
   net-tools \
   nodejs \
   procps \
-  vim
+  vim \
+  wget
