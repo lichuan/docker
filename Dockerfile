@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
   procps \
   vim \
   wget
-COPY .profile /root/.profile
+RUN ["/bin/bash", "-c", ". /etc/bash_completion"]
