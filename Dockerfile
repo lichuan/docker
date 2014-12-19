@@ -7,4 +7,4 @@ RUN apt-get update && apt-get install -y \
   procps \
   vim \
   wget
-ENTRYPOINT ["/bin/bash", "-c", ". /etc/bash_completion"]
+ENTRYPOINT ["source", "/etc/bash_completion"]
