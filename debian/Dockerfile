@@ -9,4 +9,3 @@ RUN apt-get update && apt-get install -y \
   vim \
   wget
 COPY bash.bashrc /etc/bash.bashrc
-
