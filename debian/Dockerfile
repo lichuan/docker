@@ -10,3 +10,5 @@ RUN apt-get update && apt-get install -y \
   wget
 COPY bash.bashrc /etc/bash.bashrc
 RUN sed -i '$aexport LC_ALL=C.UTF-8' /root/.bashrc
+RUN git config --global user.name lichuan
+RUN git config --global user.email 308831759@qq.com
