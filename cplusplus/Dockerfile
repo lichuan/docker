@@ -1,5 +1,8 @@
 FROM lichuan/debian
 RUN apt-get install -y \
+  clang \
   cscope \
   emacs \
-  g++
+  g++ \
+  gdb \
+  make
