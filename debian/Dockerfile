@@ -3,6 +3,7 @@ RUN apt-get update && apt-get install -y \
   bash-completion \
   bzip2 \
   curl \
+  emacs \
   git \
   lsb-release \
   net-tools \
