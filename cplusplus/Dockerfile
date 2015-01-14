@@ -16,7 +16,7 @@ COPY auto-complete /root/download/auto-complete
 COPY other /root/.emacs.d/other
 COPY color-theme-6.6.0 /root/.emacs.d/color-theme-6.6.0
 COPY cscope /root/.emacs.d/cscope
-COPY .emacs /root
+COPY .emacs /root/.emacs
 RUN cd /root/download/auto-complete && make install DIR=/root/.emacs.d/auto-complete
 
 
