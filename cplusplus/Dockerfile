@@ -7,11 +7,10 @@ RUN apt-get install -y \
   make \
   yasnippet
 
-RUN mkdir /root/download
-COPY auto-complete /root/download/
+RUN mkdir -p /root/download/auto-complete
 RUN mkdir -p /root/.emacs.d/auto-complete
-WORKDIR /root/download/auto-complete
-RUN ["/bin/bash", "-c", "make install DIR=/root/.emacs.d/auto-complete"]
+COPY auto-complete /root/download/auto-complete
+RUN cd /root/download/auto-complete && make install DIR=/root/.emacs.d/auto-complete
 COPY color-theme-6.6.0 /root/.emacs.d/
 COPY cscope /root/.emacs.d/
 COPY other /root/.emacs.d/
