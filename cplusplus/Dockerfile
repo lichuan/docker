@@ -5,6 +5,7 @@ RUN apt-get install -y \
   g++ \
   gdb \
   make \
+  ruby \
   yasnippet
 
 RUN mkdir /root/download

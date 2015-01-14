@@ -60,7 +60,7 @@
   (global-auto-complete-mode t))
 (my-ac-config)
 
-;;auto-complete-clang
+;;auto-complete-clang echo "" | g++ -v -x c++ -E -
 (setq ac-clang-flags
       (mapcar (lambda (item)(concat "-I" item))
               (split-string
