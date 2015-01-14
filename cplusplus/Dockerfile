@@ -21,5 +21,4 @@ COPY cscope /root/.emacs.d/cscope
 COPY .emacs /root/.emacs
 COPY lccscope /root/bin
 RUN cd /root/download/auto-complete && make install DIR=/root/.emacs.d/auto-complete
-
-
+RUN export PATH=$PATH:/root/bin
