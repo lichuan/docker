@@ -6,6 +6,7 @@ RUN apt-get install -y \
   gdb \
   make \
   ruby \
+  scons \
   yasnippet
 RUN mkdir -p /root/download/auto-complete
 RUN mkdir -p /root/.emacs.d/auto-complete
