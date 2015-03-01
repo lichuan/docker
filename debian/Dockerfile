@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
   lsb-release \
   net-tools \
   procps \
+  screen \
   vim \
   wget
 RUN mkdir -p /root/bin
