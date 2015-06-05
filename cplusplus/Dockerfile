@@ -1,4 +1,4 @@
-FROM lichuan/debian
+FROM lichuan/ubuntu
 RUN apt-get install -y \
   clang \
   cscope \

@@ -65,16 +65,14 @@
       (mapcar (lambda (item)(concat "-I" item))
               (split-string
                "
- /usr/include/c++/4.7
- /usr/include/c++/4.7/i486-linux-gnu
- /usr/include/c++/4.7/backward
- /usr/lib/gcc/i486-linux-gnu/4.7/include
+ /usr/include/c++/4.8
+ /usr/include/x86_64-linux-gnu/c++/4.8
+ /usr/include/c++/4.8/backward
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include
  /usr/local/include
- /usr/lib/gcc/i486-linux-gnu/4.7/include-fixed
- /usr/include/i386-linux-gnu
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed
+ /usr/include/x86_64-linux-gnu
  /usr/include
- /root/repos/gabriel/src/3rd-party/ACE_wrappers/src
- /root/repos/gabriel/src/3rd-party/boost_1_53_0/src
 "
                )))
 (require 'auto-complete-clang)
