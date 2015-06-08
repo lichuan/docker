@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
   emacs \
   git \
   screen \
-  wget
+  wget \
+  pkg-config
 RUN mkdir -p /root/bin
 COPY bash.bashrc /etc/bash.bashrc
 RUN sed -i '$aexport LC_ALL=C.UTF-8' /root/.bashrc
