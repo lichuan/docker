@@ -28,6 +28,22 @@ def gen_cscope path, arr
     if File.directory? next_path
       gen_cscope next_path, arr
     elsif consider? next_path
+      if File.symlink? next_path
+        dir_part = File.split(next_path)[0]
+        link_path = File.readlink next_path
+        cnt = 0
+        while true do
+          md = /(\.\.\/)(.*)/.match link_path
+          break if md.nil?
+          cnt += 1
+          link_path = md[2]
+        end
+        while cnt > 0 do
+          dir_part = File.split(dir_part)[0]
+          cnt -= 1
+        end
+        next_path = dir_part + "/" + link_path
+      end
       $cscope_file_list.push next_path
     end
   end
